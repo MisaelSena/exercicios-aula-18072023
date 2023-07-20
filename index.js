@@ -76,4 +76,29 @@ function exercicio3(){
       }
     }
     
-exercicio3();
+//exercicio3();
+
+/* Exercício 4: Escreva uma função em JavaScript que receba um array
+ *de números e retorne a média aritmética desses números.
+ */
+ function exercicio4(){
+        var numeros = [];
+        
+        while(numeroDigitado !== "x"){
+          var numeroDigitado = prompt("Digite um número ou x para encerrar: ");
+          if(numeroDigitado !== "x"){
+            var soma = 0;            
+            numeros.push(parseFloat(numeroDigitado));
+            console.log(`Os números digitados até o momento foram: ${numeros}`);
+            for(i = 0; i < numeros.length; i++){
+              soma = soma + numeros[i];                            
+            }
+            var media = soma / numeros.length;
+            console.log(`Média: ${media}`);        
+            
+          }
+          
+        }
+        
+ }
+ exercicio4();
